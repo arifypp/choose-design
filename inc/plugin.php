@@ -39,15 +39,15 @@ function cb_register_required_plugins() {
 			'slug'      => 'classic-editor',
 			'required'  => false,
 		),
-        array(
-			'name'               => 'Form Craft', // The plugin name.
-			'slug'               => 'form-craft', // The plugin slug (typically the folder name).
-			'source'             => esc_url( 'http://combrokers.co/postkasse.eu/source/formcraft3.zip' ),
-			'required'           => true, 
-			'version'            => '', 
-			'force_activation'   => false,
-			'external_url'       => '', 
-			'is_callable'        => '',
+		array(
+			'name'      => 'Portfolio & Project',
+			'slug'      => 'portfolio-and-projects',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Smash Balloon Social Photo Feed',
+			'slug'      => 'instagram-feed',
+			'required'  => false,
 		),
 		
 		// <snip />
