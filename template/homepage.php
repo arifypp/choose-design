@@ -114,7 +114,7 @@ get_header();
 					<?php endif; ?>
 					</div>
 					<div class="col-12 instagram-feed">
-						<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+						<?php echo do_shortcode('[instagram-feed feed=2]'); ?>
 					</div>
 				</div>
 			</div>
