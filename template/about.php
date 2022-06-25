@@ -47,7 +47,7 @@ get_header();
                         <h2><?php echo esc_html__( $cb_about_page_left_title, 'choose-design' ); ?></h2>
                         <div class="about-left-item">
                             <ul>
-                                <?foreach ($cb_about_page_left_items as $key => $leftitems) {
+                                <?php foreach ($cb_about_page_left_items as $key => $leftitems) {
                                    echo '<li>'.$leftitems["about_page_left_items"].'</li>';
                                 } ?>                               
                             </ul>
