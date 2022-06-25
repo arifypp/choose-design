@@ -217,7 +217,7 @@ function register_navwalker(){
 add_action( 'after_setup_theme', 'register_navwalker' );
 
 
-// validate service label
+// Wpkses for theme function
 function cb_kses( $input ) {
     $allowed_tags = array(
         //formatting
@@ -249,3 +249,11 @@ function add_class_to_href( $classes, $item ) {
     return $classes;
 }
 add_filter( 'nav_menu_link_attributes', 'add_class_to_href', 10, 2 );
+
+/**
+ *
+ * TGM Plugin Activation Framework
+ * A Simple and Lightweight WordPress Option Framework for Themes and Plugins
+ *
+ */
+require_once get_theme_file_path() .'/inc/plugin.php';

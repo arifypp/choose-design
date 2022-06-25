@@ -25,13 +25,14 @@ $gallery_imgs 	= get_post_meta( $post->ID, $prefix.'gallery_id', true );
 					<div class="post-content">
 						<ul class="row">
 							<?php 
+							if( !empty($gallery_imgs) ) :
 							foreach ($gallery_imgs as $img_key => $img_data) {
 								$gallery_img_src 	= wp_pap_get_image_src( $img_data,'full'); ?>
 								
 							<li class="col-4 mb-3">
 								<a href="<?php echo esc_url($gallery_img_src); ?>" data-gallery="portfolioGallery" class="portfolio-lightbox"> <img src="<?php echo esc_url($gallery_img_src); ?>" alt="img"> </a>
 							</li>
-							<?php }; ?>
+							<?php } endif; ?>
 						</ul>
 					</div>
 				</div>
