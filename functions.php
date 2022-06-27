@@ -257,3 +257,19 @@ add_filter( 'nav_menu_link_attributes', 'add_class_to_href', 10, 2 );
  *
  */
 require_once get_theme_file_path() .'/inc/plugin.php';
+
+/**
+ *
+ * Add description in feature image
+ *
+ */
+add_action('admin_footer', function() {
+    global $pagenow;
+    if('post.php' == $pagenow || 'post-new.php' == $pagenow) : ?>
+    <script>
+        jQuery(document).ready(function($) {
+            $('#postimagediv .inside').after('<div style="padding: 0 12px 12px; line-height:1.3;">Please upload the image with <strong>1600x330px</strong> image. If you dont follow the size then image come broken.</div>');
+        });
+    </script>
+<?php endif;
+});
