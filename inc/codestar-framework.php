@@ -175,6 +175,7 @@ if( class_exists( 'CSF' ) ) {
                 'id'    => 'hero_slider_image_items',
                 'type'  => 'media',
                 'subtitle'  => __('Upload your slider', 'choose-design' ),
+                'desc' => 'Please upload the image with 1600x600 image. If you dont follow the size then image come broken.',
               ),
               
             )
